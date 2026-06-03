@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>税智眼 · 多源数据融合智能核验平台</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+SC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { 50: "#eff6ff", 100: "#dbeafe", 500: "#2563eb", 600: "#1d4ed8", 700: "#1e40af" } },
+          boxShadow: { card: "0 8px 24px rgba(15,23,42,0.06)", cardHover: "0 14px 36px rgba(30,64,175,0.14)" },
+          fontFamily: { sans: ["IBM Plex Sans SC", "Plus Jakarta Sans", "sans-serif"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+ <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16">
+    <div class="w-32 flex justify-start items-center gap-2">
+      <img src="images/logo.png" alt="税智眼 Logo" class="h-7 w-auto">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-brand-700">税智眼</a>
+    </div>
+    <nav class="hidden md:flex gap-8 font-medium text-slate-700">
+      <a href="index.html">首页</a>
+      <a href="about.html" class="text-brand-600 font-semibold">关于</a>
+      <a href="features.html">核心功能</a>
+      <a href="product.html">产品方案</a>
+    </nav>
+    <div class="flex items-center gap-3 w-32 justify-end">
+      <span class="text-sm bg-slate-100 px-3 py-1.5 rounded-full text-slate-600 whitespace-nowrap"><i class="fas fa-shield-alt mr-1"></i>以数治税</span>
+      <a href="features.html" class="btn-clickable bg-brand-600 hover:bg-brand-700 text-white px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm transition whitespace-nowrap"><i class="fas fa-rocket mr-1"></i>立即体验</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <!-- 团队简介 -->
+    <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-5 sm:px-8 text-center"><div class="badge-pill">About Us</div><h1 class="text-4xl font-bold mt-4">关于税智眼</h1><p class="text-slate-600 max-w-3xl mx-auto mt-4">“税智眼”团队由深耕财税领域的业务专家与资深研发人员组成，专注于解决政企在税务管理中面临的数据零散、核查复杂、风险滞后等实际业务痛点。</p></div></section>
+
+    <!-- 三大能力 -->
+    <section class="py-12 bg-slate-50"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="grid md:grid-cols-3 gap-6"><div class="bg-white p-6 rounded-2xl shadow-sm"><i class="fas fa-chart-line text-2xl text-brand-600"></i><h3 class="font-bold text-lg mt-2">适用多种税种</h3><p>覆盖常见税种核查场景，支持按行业配置规则。</p></div><div class="bg-white p-6 rounded-2xl shadow-sm"><i class="fas fa-microchip text-2xl text-brand-600"></i><h3 class="font-bold text-lg mt-2">自动化规则引擎</h3><p>批量校验与规则复用，减少人工重复核对。</p></div><div class="bg-white p-6 rounded-2xl shadow-sm"><i class="fas fa-clock text-2xl text-brand-600"></i><h3 class="font-bold text-lg mt-2">全天候监测</h3><p>关键指标持续跟踪，异常变化及时提醒。</p></div></div></div></section>
+
+    <!-- 试点验证 -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-3xl shadow-lg overflow-hidden border border-blue-100">
+          <div class="grid md:grid-cols-2 gap-8 p-8 md:p-12">
+            <div class="space-y-5">
+              <div class="badge-pill bg-blue-100 text-brand-700">实地试点 · 标杆验证</div>
+              <h2 class="text-3xl md:text-4xl font-bold text-slate-800">河南省安阳市<br>内黄县便民服务中心</h2>
+              <p class="text-slate-600 leading-relaxed">税智眼团队深入税务窗口开展实地调研，系统学习纳税人缴税、企业登记、季度申报等业务流程。试点验证“电力-税收”关联模型，核查效率提升<strong class="text-brand-600">85%</strong>，异常识别准确率达<strong class="text-brand-600">90%</strong>以上。</p>
+              <div class="flex flex-wrap gap-3 pt-2"><span class="tag"><i class="fas fa-check-circle text-green-600"></i> 税务体验师认证</span><span class="tag"><i class="fas fa-handshake"></i> 政企协同试点</span></div>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full max-w-md"><img src="images/内黄县实地考察图.png" alt="税务体验师证书" class="w-full"></div>
+              <p class="text-center text-sm text-slate-400 mt-3">图：税智眼团队税务体验师认证证书</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 生态合作 -->
+    <section class="py-16 bg-slate-50"><div class="max-w-7xl mx-auto px-5 sm:px-8"><h2 class="text-3xl font-bold text-center">生态合作 · 共建共赢</h2><p class="text-center text-slate-500 mb-8">已与多家企业及税务师事务所签署战略合作协议</p><div class="grid md:grid-cols-3 gap-6"><div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-cardHover transition btn-clickable"><i class="fas fa-building text-2xl text-brand-600"></i><h3 class="font-bold mt-2">郑州势如破竹数字科技</h3><p class="text-sm">技术联合研发 · 接口适配中间件 · 数据互通</p></div><div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-cardHover transition btn-clickable"><i class="fas fa-file-signature text-2xl text-brand-600"></i><h3 class="font-bold mt-2">河南同庚税务师事务所</h3><p class="text-sm">企业合规自查SaaS · 财税咨询 · 联合培训</p></div><div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-cardHover transition btn-clickable"><i class="fas fa-car text-2xl text-brand-600"></i><h3 class="font-bold mt-2">内黄县新禾新能源汽车</h3><p class="text-sm">新能源行业税务模板试点 · 数据比对验证</p></div></div><div class="mt-8 text-center text-sm text-slate-500"><i class="fas fa-file-contract mr-2"></i> 已签署多项合作协议，涵盖智能核查平台部署、税务风险预警系统共建等</div></div></section>
+
+    <!-- 团队保障 -->
+    <section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-5 sm:px-8"><div class="bg-slate-100 rounded-2xl p-8"><h3 class="text-2xl font-bold text-center">落地核心保障</h3><div class="grid md:grid-cols-3 gap-6 mt-6"><div><i class="fas fa-users text-3xl text-brand-600"></i><p class="font-bold mt-2">团队保障</p><p class="text-sm text-slate-600">对接、技术、运营、法务四组协同，7×24响应</p></div><div><i class="fas fa-microchip text-3xl text-brand-600"></i><p class="font-bold mt-2">技术保障</p><p class="text-sm text-slate-600">每月安全检测，模型持续迭代</p></div><div><i class="fas fa-chalkboard text-3xl text-brand-600"></i><p class="font-bold mt-2">资源保障</p><p class="text-sm text-slate-600">高校算法支持+税务部门资源共享</p></div></div></div></div></section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-300 pt-10 pb-6">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+      <div class="flex flex-wrap justify-center gap-6 text-sm">
+        <a href="about.html" class="hover:text-white transition btn-clickable">关于我们</a>
+        <span class="text-slate-600">|</span>
+        <a href="features.html" class="hover:text-white transition btn-clickable">核心功能</a>
+        <span class="text-slate-600">|</span>
+        <a href="product.html" class="hover:text-white transition btn-clickable">产品方案</a>
+        <span class="text-slate-600">|</span>
+        <a href="javascript:void(0)" class="hover:text-white transition btn-clickable">联系我们</a>
+      </div>
+      <div class="mt-6 text-xs text-slate-400">
+        <p>© 2026 税智眼项目组 版权所有</p>
+        <p class="mt-1">豫ICP备2026123456号 | 数据融合 · 智能驱动 · 主动治理</p>
+      </div>
+      <div class="mt-5 flex justify-center gap-5">
+        <a href="javascript:void(0)" class="text-slate-400 hover:text-white transition text-lg btn-clickable"><i class="fab fa-weixin"></i></a>
+        <a href="javascript:void(0)" class="text-slate-400 hover:text-white transition text-lg btn-clickable"><i class="fab fa-linkedin-in"></i></a>
+        <a href="javascript:void(0)" class="text-slate-400 hover:text-white transition text-lg btn-clickable"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
